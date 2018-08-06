@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad5PF.EditarNota">
+   <children>
+      <VBox layoutX="49.0" layoutY="22.0" prefHeight="467.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="473.0" prefWidth="450.0" style="-fx-background-color: #9E9D9D;">
+               <children>
+                  <Label layoutX="14.0" layoutY="38.0" text="Titulo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="79.0" text="Descripcion">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField fx:id="titulo" layoutX="114.0" layoutY="43.0" prefHeight="25.0" prefWidth="322.0" style="-fx-background-color: #FAFAFA;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="descripcion" layoutX="10.0" layoutY="120.0" prefHeight="264.0" prefWidth="430.0" style="-fx-background-color: #FAFAFA;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXTextArea>
+                  <JFXButton fx:id="actualizar" layoutX="14.0" layoutY="391.0" onAction="#actualizar" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #558D5E;" text="Actualizar">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="286.0" layoutY="391.0" onAction="#cancelar" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #99202B;" text="Cancelar">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <CheckBox fx:id="guardar" layoutX="361.0" layoutY="98.0" mnemonicParsing="false" text="Guardar" />
+                  <JFXButton layoutX="165.0" layoutY="391.0" onAction="#eliminar" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: #45858A;" text="Eliminar">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="14.0" text="Nota">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXComboBox fx:id="nota" layoutX="114.0" layoutY="11.0" prefHeight="25.0" prefWidth="322.0" style="-fx-background-color: #FAFAFA;" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
